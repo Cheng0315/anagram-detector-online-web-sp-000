@@ -8,7 +8,7 @@ class Anagram
 
   def match(arr)
     arr.select do |word|
-      if word.char.sort == @anagram.char.sort
+      if word.chars.sort == @anagram.chars.sort
         word
       end
     end
